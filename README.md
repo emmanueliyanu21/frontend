@@ -1,46 +1,27 @@
-# Getting Started with Create React App
+Style Guide 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here's a list of style guide recommendations I use for maintaining a consistent and organized codebase in a React project:
 
-## Available Scripts
+1. Code Formatting: I use a consistent code formatting tool i.e Prettier to ensure uniform code style.
 
-In the project directory, you can run:
+2. Indentation: I use a consistent number of spaces or tabs for indentation. I choose 2 indentation and stick with it throughout the project.
 
-### `npm start`
+3. Naming Conventions: I followed aconsistent naming conventions for variables, functions, components, and files. Use camelCase for variables and functions, and PascalCase for components and lowercase for classnames in css.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Folder Structure: I organized my project files into logical folders (e.g., components, modules, assets ) to maintain a clear project structure.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+5. Component Structure:I followed a consistent component structure that includes separate folders for component code, and styles when needed.
 
-### `npm test`
+6. CSS-in-JS or Stylesheets: I choose a styling approach of Styled Components and stick with it for consistent styling across components.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+7. TypeScript: I use TypeScript to define and enforce prop types and component interfaces.
 
-### `npm run build`
+8. Imports and Exports: I used explicit imports and exports to improve code readability and prevent unused imports.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+9. Avoid Deep Nesting: I limited component nesting to avoid deep hierarchies. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+10. Single Responsibility Principle: I Kept components focused on a single responsibility, promoting reusability and maintainability.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+11. Commenting: I added comments to clarify complex logic, edge cases, and code intentions.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+12. Avoid Inline Styles: I avoided using inline styles, as they can make code harder to maintain and style consistently.
