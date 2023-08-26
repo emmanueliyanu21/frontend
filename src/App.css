@@ -63,7 +63,7 @@ h6 {
 }
 
 header {
-  background: url('assets/cutout.png') no-repeat top right, var(--clr-blue);
+  /* background: url('assets/cutout.png') no-repeat top right, var(--clr-blue); */
   color: var(--clr-white);
 }
 
