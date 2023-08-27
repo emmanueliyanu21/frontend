@@ -5,7 +5,7 @@ import { HiOutlineArrowRight } from "react-icons/hi";
 
 function Service() {
   return (
-    <>
+    <div className="AppWrapper">
       <section className="services container">
         <h6>{serviceData?.header}</h6>
         <p>{serviceData?.text}</p>
@@ -50,7 +50,7 @@ function Service() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 

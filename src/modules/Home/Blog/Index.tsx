@@ -21,7 +21,7 @@ function Blog() {
     };
 
   return (
-    <main>
+    <div className='AppWrapper'>
       <section className="blog container">
         <h6>{blog?.header}</h6>
         <p>{blog?.text}</p>
@@ -56,7 +56,7 @@ function Blog() {
           {isValidEmail ? null : <p>Please enter a valid email address.</p>}
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 

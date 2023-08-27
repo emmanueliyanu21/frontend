@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <>
+    <div className="AppWrapper">
       <footer className="container">
         <div className="footer_main">
           <img src={footer?.logo} alt="" />
@@ -30,7 +30,7 @@ function Footer() {
           </div>
         ))}
       </footer>
-    </>
+    </div>
   );
 }
 

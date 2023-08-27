@@ -34,8 +34,9 @@ function Testimonial({step = 400}) {
   };
 
   return (
-    <main>
-      <section className="testimonials">
+    <>
+      <section className="testimonials ">
+        <div className="AppWrapper">
         <div className="testimonials_heading container">
           <h1>{testimonial?.header}</h1>
           <span className="hidden-900">
@@ -72,8 +73,10 @@ function Testimonial({step = 400}) {
             </article>
           ))}
         </div>
+        </div>
       </section>
-      <div className="cta-three container">
+      <div className="AppWrapper">
+      <div className=" cta-three container">
         <img src={Customer} alt="cta" />
         <div className="cta-three_content">
           <h1>{testimonial?.main?.header}</h1>
@@ -86,7 +89,7 @@ function Testimonial({step = 400}) {
               >
                 <span>
                   <p>{item?.text}</p>
-                  <i className="icon">
+                  <i className={`icon ${isExpanded ? 'is_expanded' : ''}`}>
                     {isExpanded[index] ? item?.icon : item?.icon2}
                   </i>
                 </span>
@@ -100,7 +103,8 @@ function Testimonial({step = 400}) {
           </div>
         </div>
       </div>
-    </main>
+      </div>
+    </>
   );
 }
 
