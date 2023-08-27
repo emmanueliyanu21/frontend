@@ -1,8 +1,8 @@
-import { Footer } from '../../components/Footer/Footer'
-import { Blog } from './Blog/Blog'
-import { HomeBanner } from './HeroBanner/HeroBanner'
-import { Service } from './Service/Service'
-import { Testimonial } from './Testimonial/Testimonial'
+import Footer from '../../components/Footer/Index'
+import Blog  from './Blog/Index'
+import HomeBanner  from './HeroBanner/Index'
+import Service from './Service/Index'
+import Testimonial from './Testimonial/Index'
 
 function Home() {
   return (

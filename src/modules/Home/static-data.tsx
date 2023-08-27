@@ -20,7 +20,7 @@ import { IoCheckmarkCircle } from "react-icons/io5";
 import { PiLeaf } from "react-icons/pi";
 import { FiEye } from "react-icons/fi";
 import { MdOutlineWbSunny } from "react-icons/md";
-import { FaChevronCircleDown } from "react-icons/fa";
+import { FaChevronCircleDown, FaChevronCircleUp } from "react-icons/fa";
 import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
@@ -122,10 +122,12 @@ const testimonial = {
       {
         text: "We connect our customers with the best?",
         icon: <FaChevronCircleDown />,
+        icon2: <FaChevronCircleUp />,
       },
       {
         text: "Android research & development rockstar?",
         icon: <FaChevronCircleDown />,
+        icon2: <FaChevronCircleUp />,
       },
     ],
   },
@@ -253,7 +255,7 @@ const navbar = {
       url: "about",
     },
     {
-      name: "Login In",
+      name: "Login",
       url: "login",
     },
   ],
