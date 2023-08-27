@@ -4,7 +4,8 @@ import Service3 from "../../assets/service3.png";
 import firstImage from "../../assets/cta1.png";
 import secondImage from "../../assets/cta1.png";
 import heroImage from "../../assets/heroImg.png";
-import heroLogo from "../../assets/logos.png";
+import Boldo from "../../assets/Boldo.svg";
+import Presto from "../../assets/Presto.svg";
 import Blog1 from "../../assets/blog1.png";
 import Blog2 from "../../assets/blog2.png";
 import Blog3 from "../../assets/blog1.png";
@@ -114,6 +115,24 @@ const testimonial = {
       textName: "Harry Potter",
       textRole: "Team Leader @ Gryffindor",
     },
+    {
+      main: "Buyer buzz partner network disruptive non-disclosure agreement business",
+      image: Testimonial1,
+      textName: "Albus Dumbledore",
+      textRole: "Manager @ Howarts",
+    },
+    {
+      main: "Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor.",
+      image: Testimonial2,
+      textName: "Severus Snape",
+      textRole: "Manager @ Slytherin",
+    },
+    {
+      main: "Release facebook responsive web design business model canvas seed money monetization",
+      image: Testimonial3,
+      textName: "Harry Potter",
+      textRole: "Team Leader @ Gryffindor",
+    },
   ],
   main: {
     header:
@@ -177,7 +196,10 @@ const hero = {
   cta1: "Buy Template",
   cta2: "Explore",
   heroImage: heroImage,
-  heroLogo: heroLogo,
+  heroBanner: [ 
+    {image: Boldo},
+    {image: Presto}
+  ]
 };
 
 const footer = {

@@ -1,4 +1,5 @@
 import Button from "../../../components/Button/Index";
+import ScrollBanner from "../../../components/ScrollBanner/Index";
 
 import { hero } from "../static-data";
 
@@ -18,9 +19,7 @@ function HomeBanner() {
             </div>
             <img className="animate__animated animate__fadeInRight" src={hero?.heroImage} alt="hero" />
           </div>
-          <div className="hero_logos animate__animated  animate__fadeInUp">
-            <img src={hero?.heroLogo} alt="logos" />
-          </div>
+          <ScrollBanner data={hero?.heroBanner} />
         </section>
       </header>
     </>

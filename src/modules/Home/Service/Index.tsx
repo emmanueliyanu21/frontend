@@ -16,7 +16,7 @@ function Service() {
               <h3>{item?.main}</h3>
               <p>{item?.description}</p>
               <a href="/">
-                {item?.cta} <HiOutlineArrowRight />
+                {item?.cta} <HiOutlineArrowRight className="icon" />
               </a>
             </article>
           ))}

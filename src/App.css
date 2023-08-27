@@ -204,6 +204,21 @@ nav li:nth-of-type(4) > a {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background: linear-gradient(45deg, var(--clr-blue) 0%, var(--clr-blue) 33%, transparent 33%, transparent 66%, var(--clr-blue) 66%, var(--clr-blue) 100%);
+}
+
+.hero_logos::-webkit-scrollbar {
+  display: none;
+}
+
+.hero_logos > img {
+  width: 120px;
+  opacity: 0.9;
+  margin-right: 4rem;
 }
 
 .services,
@@ -273,6 +288,11 @@ nav li:nth-of-type(4) > a {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+}
+
+.services_service > article a:hover .icon {
+  transform: translate(5px);
+  transition: all 0.5s ease-out;
 }
 
 .cta-one,
@@ -418,6 +438,7 @@ nav li:nth-of-type(4) > a {
 .testimonials_heading span > .icon {
   color: var(--clr-white);
   font-size: 64px;
+  cursor: pointer;
 }
 
 .testimonials_heading span {
@@ -427,9 +448,17 @@ nav li:nth-of-type(4) > a {
 
 .testimonials_main {
   padding-top: 4.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 1.38rem;
+  display: flex;
+  gap: 1.38rem;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.testimonials_main::-webkit-scrollbar {
+  display: none;
 }
 
 .testimonials_main > article {
@@ -444,6 +473,8 @@ nav li:nth-of-type(4) > a {
 .testimonials_main > article p {
   font-size: 1.5rem;
   line-height: 2.25rem;
+  width: 290px;
+  white-space: pre-wrap;
 }
 
 .testimonials_profile {
@@ -471,6 +502,12 @@ nav li:nth-of-type(4) > a {
   font-size: 0.875rem;
   line-height: 2rem;
   font-weight: 400;
+}
+
+.disabled {
+  opacity: 0.7;
+  color: var(--clr-grey);
+  cursor: not-allowed !important;
 }
 
 .cta-three {
