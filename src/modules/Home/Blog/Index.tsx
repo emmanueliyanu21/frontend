@@ -1,9 +1,25 @@
 import { useState } from 'react';
 
 import Button from "../../../components/Button/Index";
-import { blog } from "../static-data";
 
-function Blog() {
+type blogProps = {
+    header: string;
+    text: string;
+    data: {
+        image: string;
+        text: string;
+        date: string;
+        details: string;
+        imageMain: string;
+        user: string;
+    }[];
+    main: {
+        header: string;
+        text: string;
+    };
+}
+
+const Blog = ({header, text, data, main}: blogProps): JSX.Element => {
 
     const [email, setEmail] = useState('');
     const [isValidEmail, setIsValidEmail] = useState(true);
@@ -23,10 +39,10 @@ function Blog() {
   return (
     <div className='AppWrapper'>
       <section className="blog container">
-        <h6>{blog?.header}</h6>
-        <p>{blog?.text}</p>
+        <h6>{header}</h6>
+        <p>{text}</p>
         <div className="blog_articles">
-          {blog?.data.map((item, index) => (
+          {data.map((item, index) => (
             <article key={index}>
               <img src={item?.image} alt="blog1" />
               <span>
@@ -44,7 +60,7 @@ function Blog() {
         <Button buttonText="Load more" />
       </section>
       <section className="email container">
-        <h1>{blog?.main?.header}</h1>
+        <h1>{main?.header}</h1>
         <div className="email_form">
           <input
             type="email"
@@ -52,7 +68,7 @@ function Blog() {
             value={email}
             onChange={handleEmailChange}
           />
-          <button onClick={handleValidationClick}>{blog?.main?.text}</button>
+          <button onClick={handleValidationClick}>{main?.text}</button>
           {isValidEmail ? null : <p>Please enter a valid email address.</p>}
         </div>
       </section>

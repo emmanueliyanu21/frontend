@@ -1,3 +1,4 @@
+import "./ScrollBanner.css";
 
 type scrollBannerProps = {
   data: {

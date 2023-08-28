@@ -1,18 +1,32 @@
-import { footer } from "../../modules/Home/static-data";
 import Button from "../Button/Index";
+
+import "./Footer.css";
 
 import { Link } from "react-router-dom";
 
-function Footer() {
+type footerProps = {
+    logo: string;
+    text: string;
+    caption: string;
+    data: {
+        header: string;
+        links: {
+            name: string;
+            url: string;
+        }[];
+    }[];
+}
+
+const Footer = ({logo, text, caption, data }: footerProps): JSX.Element => {
   return (
     <div className="AppWrapper">
       <footer className="container">
         <div className="footer_main">
-          <img src={footer?.logo} alt="" />
-          <p>{footer?.text}</p>
-          <p>{footer?.caption}</p>
+          <img src={logo} alt="" />
+          <p>{text}</p>
+          <p>{caption}</p>
         </div>
-        {footer?.data.map((item, index) => (
+        {data.map((item, index) => (
           <div className="footer_section" key={index}>
             <h4>{item?.header}</h4>
             <ul>

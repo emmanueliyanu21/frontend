@@ -1,12 +1,32 @@
 import { useState, useRef } from "react";
 
-import { testimonial } from "../static-data";
-
 import Customer from "../../../assets/cta3.png";
 
-function Testimonial({step = 400}) {
+type testimonialProps = {
+    header: string;
+    icon1: JSX.Element;
+    icon: JSX.Element;
+    data: {
+        main: string;
+        image: string;
+        textName: string;
+        textRole: string;
+    }[];
+    main: {
+        header: string;
+        data: {
+            text: string;
+            icon: JSX.Element;
+            icon2: JSX.Element;
+        }[];
+    };
+    content: string
+    step?: number
+}
+
+const Testimonial = ({header, icon1, icon, content, data, main, step = 400}:testimonialProps): JSX.Element => {
   const [isExpanded, setIsExpanded] = useState(
-    Array(testimonial?.main?.data.length).fill(false)
+    Array(main?.data.length).fill(false)
   );
   const [progress, setProgress] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -16,9 +36,6 @@ function Testimonial({step = 400}) {
     updatedExpanded[index] = !updatedExpanded[index];
     setIsExpanded(updatedExpanded);
   };
-
-  const content =
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quia excepturi necessitatibus";
 
   const getProgress = (current: HTMLDivElement) =>
     (current.scrollLeft / (current.scrollWidth - current.clientWidth)) * 100;
@@ -38,19 +55,19 @@ function Testimonial({step = 400}) {
       <section className="testimonials ">
         <div className="AppWrapper">
         <div className="testimonials_heading container">
-          <h1>{testimonial?.header}</h1>
+          <h1>{header}</h1>
           <span className="hidden-900">
             <i
               onClick={() => handleScroll("left")}
               className={`icon ${progress === 0 ? "disabled" : ""}`}
             >
-              {testimonial?.icon1}
+              {icon1}
             </i>
             <i
               onClick={() => handleScroll("right")}
               className={`icon ${progress === 100 ? "disabled" : ""}`}
             >
-              {testimonial?.icon2}
+              {icon}
             </i>
           </span>
         </div>
@@ -60,7 +77,7 @@ function Testimonial({step = 400}) {
           onScroll={() => handleScroll()}
           className="testimonials_main container"
         >
-          {testimonial?.data.map((item, index) => (
+          {data.map((item, index) => (
             <article key={index}>
               <p>“{item?.main}”</p>
               <div className="testimonials_profile">
@@ -79,9 +96,9 @@ function Testimonial({step = 400}) {
       <div className=" cta-three container">
         <img src={Customer} alt="cta" />
         <div className="cta-three_content">
-          <h1>{testimonial?.main?.header}</h1>
+          <h1>{main?.header}</h1>
           <div>
-            {testimonial?.main?.data.map((item, index) => (
+            {main?.data.map((item, index) => (
               <div
                 className="cta-three_accordion"
                 key={index}

@@ -1,31 +1,48 @@
 import Button from "../../../components/Button/Index";
+
 import ScrollBanner from "../../../components/ScrollBanner/Index";
 
-import { hero } from "../static-data";
+type heroBannerProps = {
+  header: string;
+  text: string;
+  cta1: string;
+  cta2: string;
+  heroImage: string;
+  heroBanner: {
+    image: string;
+  }[];
+};
 
-function HomeBanner() {
+const HomeBanner = ({
+  header,
+  text,
+  cta1,
+  cta2,
+  heroImage,
+  heroBanner,
+}: heroBannerProps): JSX.Element => {
   return (
     <div className="AppWrapper">
       <section className="hero container">
         <div className="hero_main ">
           <div className="hero_content animate__animated animate__fadeInLeft">
-            <h1>{hero?.header}</h1>
-            <p>{hero?.text}</p>
+            <h1>{header}</h1>
+            <p>{text}</p>
             <span>
-              <Button buttonText={hero?.cta1} />
-              <Button buttonText={hero?.cta2} />
+              <Button buttonText={cta1} />
+              <Button buttonText={cta2} />
             </span>
           </div>
           <img
             className="animate__animated animate__fadeInRight"
-            src={hero?.heroImage}
+            src={heroImage}
             alt="hero"
           />
         </div>
-        <ScrollBanner data={hero?.heroBanner} />
+        <ScrollBanner data={heroBanner} />
       </section>
     </div>
   );
-}
+};
 
 export default HomeBanner;

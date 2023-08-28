@@ -1,14 +1,20 @@
 import { useState } from "react";
 
-import { navbar } from "../../modules/Home/static-data";
-
 import "./Navbar.css";
 
 import { IoMenu, IoCloseSharp } from "react-icons/io5";
 
 import { Link } from "react-router-dom";
 
-function Navbar() {
+type navbarProps = {
+  logo: string;
+  links: {
+    name: string;
+    url: string;
+  }[];
+};
+
+const Navbar = ({ logo, links }: navbarProps): JSX.Element => {
   const [sideNavWidth, setSideNavWidth] = useState("0");
 
   const openNav = () => {
@@ -24,10 +30,10 @@ function Navbar() {
       <div className="AppWrapper">
         <nav className="container" id="navContent">
           <Link to="/">
-            <img src={navbar?.logo} alt="Boldo" />
+            <img src={logo} alt="Boldo" />
           </Link>
           <ul>
-            {navbar?.links.map((item, index) => (
+            {links.map((item, index) => (
               <li key={index}>
                 <a href={`/${item?.url}`}>{item?.name}</a>
               </li>
@@ -42,7 +48,7 @@ function Navbar() {
           onClick={closeNav}
         >
           <IoCloseSharp id="closeNav" />
-          {navbar?.links.map((item, index) => (
+          {links.map((item, index) => (
             <a href={`/${item?.url}`} key={index}>
               {item?.name}
             </a>
@@ -51,6 +57,6 @@ function Navbar() {
       </div>
     </header>
   );
-}
+};
 
 export default Navbar;

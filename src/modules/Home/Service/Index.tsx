@@ -1,16 +1,50 @@
 import Button from "../../../components/Button/Index";
-import { serviceData } from "../static-data";
 
 import { HiOutlineArrowRight } from "react-icons/hi";
 
-function Service() {
+type serviceDataProps = {
+  header: string;
+  text: string;
+  data: {
+    image: string;
+    main: string;
+    description: string;
+    cta: string;
+  }[];
+  firstDetails: {
+    image: string;
+    header: string;
+    data: {
+      icon: JSX.Element;
+      text: string;
+    }[];
+    cta: string;
+  };
+  secondDetails: {
+    image: string;
+    header: string;
+    data: {
+      icon: JSX.Element;
+      text: string;
+    }[];
+    cta: string;
+  };
+};
+
+const Service = ({
+  header,
+  text,
+  data,
+  firstDetails,
+  secondDetails,
+}: serviceDataProps): JSX.Element => {
   return (
     <div className="AppWrapper">
       <section className="services container">
-        <h6>{serviceData?.header}</h6>
-        <p>{serviceData?.text}</p>
+        <h6>{header}</h6>
+        <p>{text}</p>
         <div className="services_service">
-          {serviceData?.data.map((item, index) => (
+          {data.map((item, index) => (
             <article key={index}>
               <img src={item?.image} alt="service1" />
               <h3>{item?.main}</h3>
@@ -22,25 +56,25 @@ function Service() {
           ))}
         </div>
         <div className="cta-one">
-          <img src={serviceData?.firstDetails?.image} alt="cta" />
+          <img src={firstDetails?.image} alt="cta" />
           <div className="cta-one_content">
-            <h1>{serviceData?.firstDetails?.header}</h1>
+            <h1>{firstDetails?.header}</h1>
             <div className="cta-one_points">
-              {serviceData?.firstDetails?.data.map((item, index) => (
+              {firstDetails?.data.map((item, index) => (
                 <span key={index}>
                   <i className="icon">{item?.icon}</i>
                   <p> {item?.text}</p>
                 </span>
               ))}
             </div>
-            <Button buttonText={serviceData?.firstDetails?.cta} />
+            <Button buttonText={firstDetails?.cta} />
           </div>
         </div>
         <div className="cta-two">
-          <img src={serviceData?.secondDetails?.image} alt="cta" />
+          <img src={secondDetails?.image} alt="cta" />
           <div className="cta-two_content">
-            <h1>{serviceData?.secondDetails?.header}</h1>
-            {serviceData?.secondDetails?.data.map((item, index) => (
+            <h1>{secondDetails?.header}</h1>
+            {secondDetails?.data.map((item, index) => (
               <div className="cta-two_points" key={index}>
                 <span>
                   <i className="icon">{item?.icon}</i> <p>{item?.text}</p>

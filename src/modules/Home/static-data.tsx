@@ -95,7 +95,7 @@ const serviceData = {
 const testimonial = {
   header: "An enterprise template to ramp up your company website.",
   icon1: <BsFillArrowLeftCircleFill />,
-  icon2: <BsFillArrowRightCircleFill />,
+  icon: <BsFillArrowRightCircleFill />,
   data: [
     {
       main: "Buyer buzz partner network disruptive non-disclosure agreement business",
@@ -150,6 +150,7 @@ const testimonial = {
       },
     ],
   },
+  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit Quaerat quia excepturi necessitatibus"
 };
 
 const blog = {
