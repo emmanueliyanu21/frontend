@@ -30,12 +30,12 @@ const Navbar = ({ logo, links }: navbarProps): JSX.Element => {
       <div className="AppWrapper">
         <nav className="container" id="navContent">
           <Link to="/">
-            <img src={logo} alt="Boldo" />
+            <img src={logo} alt="FeanPay" width={"160px"} />
           </Link>
           <ul>
             {links.map((item, index) => (
               <li key={index}>
-                <a href={`/${item?.url}`}>{item?.name}</a>
+                <a href={item?.url}>{item?.name}</a>
               </li>
             ))}
           </ul>

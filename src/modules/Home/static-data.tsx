@@ -29,172 +29,173 @@ import {
 
 const serviceData = {
   header: "Our Services",
-  text: "Handshake infographic mass market crowdfunding iteration.",
+  text: "A fully integrated financial products",
   data: [
     {
       image: Service1,
-      main: "Cool feature title",
-      description: "Learning curve network effects return on investment.",
+      main: "Global Payment Acceptance",
+      description: "We facilitates seamless payment acceptance worldwide, ensuring businesses can effortlessly transact on a global scale",
       cta: "Explore Page",
     },
     {
       image: Service2,
-      main: "Even cooler feature title",
-      description: "Learning curve network effects return on investment.",
+      main: "Enhanced Authorization",
+      description: "Leveraging advanced algorithms and fraud detection mechanisms, FeanPay significantly boosts authorization rates. ",
       cta: "Explore Page",
     },
     {
       image: Service3,
-      main: "Cool feature title",
-      description: "Learning curve network effects return on investment.",
+      main: "Localized Optimization",
+      description: "FeanPay goes beyond borders by optimizing the checkout experience for each market",
       cta: "Explore Page",
     },
   ],
   firstDetails: {
     image: firstImage,
     header:
-      "We connect our customers with the best, and help them keep up-and stay open.",
+      "Empowering Financial Connections and Sustaining Growth with Feanpay.",
     data: [
       {
         icon: <IoCheckmarkCircle />,
-        text: "We connect our customers with the best.",
+        text: "Unlocking seamless connections with the best financial solutions.",
       },
       {
         icon: <IoCheckmarkCircle />,
-        text: "Advisor success customer launch party.",
+        text: "Advisor success for a thriving customer experience.",
       },
       {
         icon: <IoCheckmarkCircle />,
-        text: "Business-to-consumer long tail.",
+        text: "Driving business-to-consumer interactions for sustained growth.",
       },
     ],
-    cta: "Start Now",
+    cta: "Start Your Financial Journey",
   },
   secondDetails: {
     image: secondImage,
     header:
-      "We connect our customers with the best, and help them keep up-and stay open.",
+      "Innovative Solutions for Financial Connectivity - Your Journey Starts Here.",
     data: [
       {
         icon: <PiLeaf />,
-        text: "We connect our customers with the best.",
+        text: "Connecting customers with the best financial innovations.",
       },
       {
         icon: <FiEye />,
-        text: "Advisor success customer launch party.",
+        text: "Advisor success for a visionary customer launch experience.",
       },
       {
         icon: <MdOutlineWbSunny />,
-        text: "Business-to-consumer long tail.",
+        text: "Business-to-consumer strategies for a thriving financial future.",
       },
     ],
-    cta: "Start Now",
+    cta: "Start Your Financial Journey",
   },
 };
 
 const testimonial = {
-  header: "An enterprise template to ramp up your company website.",
+  header: "Optimize your financial transactions with Feanpay.",
   icon1: <BsFillArrowLeftCircleFill />,
   icon: <BsFillArrowRightCircleFill />,
   data: [
     {
-      main: "Buyer buzz partner network disruptive non-disclosure agreement business",
+      main: "Streamline global transactions with Feanpay's disruptive financial network.",
       image: Testimonial1,
-      textName: "Albus Dumbledore",
-      textRole: "Manager @ Howarts",
+      textName: "Currency Wizard",
+      textRole: "Manager @ Feanpay",
     },
     {
-      main: "Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor.",
+      main: "Unlock the potential of financial strategies and seamless user experiences.",
       image: Testimonial2,
-      textName: "Severus Snape",
-      textRole: "Manager @ Slytherin",
+      textName: "Transaction Alchemist",
+      textRole: "Manager @ Feanpay",
     },
     {
-      main: "Release facebook responsive web design business model canvas seed money monetization",
+      main: "Lead your team to success with Feanpay's advanced financial tools.",
       image: Testimonial3,
-      textName: "Harry Potter",
-      textRole: "Team Leader @ Gryffindor",
+      textName: "Money Maestro",
+      textRole: "Team Leader @ Feanpay",
     },
     {
-      main: "Buyer buzz partner network disruptive non-disclosure agreement business",
+      main: "Experience the efficiency of Feanpay in global financial partnerships.",
       image: Testimonial1,
-      textName: "Albus Dumbledore",
-      textRole: "Manager @ Howarts",
+      textName: "Currency Wizard",
+      textRole: "Manager @ Feanpay",
     },
     {
-      main: "Learning curve infrastructure value proposition advisor strategy user experience hypotheses investor.",
+      main: "Navigate financial landscapes with confidence using Feanpay's insights.",
       image: Testimonial2,
-      textName: "Severus Snape",
-      textRole: "Manager @ Slytherin",
+      textName: "Transaction Alchemist",
+      textRole: "Manager @ Feanpay",
     },
     {
-      main: "Release facebook responsive web design business model canvas seed money monetization",
+      main: "Maximize your financial potential with Feanpay's monetization strategies.",
       image: Testimonial3,
-      textName: "Harry Potter",
-      textRole: "Team Leader @ Gryffindor",
+      textName: "Money Maestro",
+      textRole: "Team Leader @ Feanpay",
     },
   ],
   main: {
     header:
-      "We connect our customers with the best, and help them keep up-and stay open.",
+      "Connect with the best in financial technology and keep your transactions efficient and open.",
     data: [
       {
-        text: "We connect our customers with the best?",
+        text: "Optimize your financial transactions with Feanpay's cutting-edge solutions.",
         icon: <FaChevronCircleDown />,
         icon2: <FaChevronCircleUp />,
       },
       {
-        text: "Android research & development rockstar?",
+        text: "Explore the possibilities of financial innovation with Feanpay.",
         icon: <FaChevronCircleDown />,
         icon2: <FaChevronCircleUp />,
       },
     ],
   },
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit Quaerat quia excepturi necessitatibus"
+  content: "Experience seamless and secure financial transactions with Feanpay, ensuring efficiency and peace of mind."
 };
 
 const blog = {
-  header: "Our Blog",
-  text: "Value proposition accelerator product management venture",
+  header: "Insights from Feanpay",
+  text: "Explore the latest in financial technology, market trends, and innovation.",
   data: [
     {
       image: Blog1,
-      text: "Category",
-      date: "November 22, 2021",
+      text: "Financial Technology",
+      date: "February 15, 2022",
       details:
-        "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
+        "Unlocking the potential of global transactions and the role of AI in financial optimization.",
       imageMain: User1,
-      user: "Chandler Bing",
+      user: "Financial Explorer",
     },
     {
       image: Blog2,
-      text: "Category",
-      date: "November 22, 2021",
+      text: "Secure Transactions",
+      date: "February 18, 2022",
       details:
-        "Seed round direct mailing non-disclosure agreement graphical user interface rockstar.",
+        "Ensuring a safe and seamless experience: How Feanpay enhances transaction security.",
       imageMain: User2,
-      user: "Rachel Green",
+      user: "Security Sentinel",
     },
     {
       image: Blog3,
-      text: "Category",
-      date: "November 22, 2021",
+      text: "Market Strategies",
+      date: "February 20, 2022",
       details:
-        "Beta prototype sales iPad gen-z marketing network effects value  proposition.",
+        "Navigating market dynamics: Strategies for success in the ever-evolving financial landscape.",
       imageMain: User3,
-      user: "Monica Geller",
+      user: "Market Navigator",
     },
   ],
   main: {
-    header: "An enterprise template to ramp up your company website",
-    text: "Start now",
+    header: "Explore the Future of Financial Connectivity with Feanpay",
+    text: "Start your journey now",
   },
 };
 
+
 const hero = {
-  header: "Save time by building fast with Boldo Template",
-  text: "Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.",
-  cta1: "Buy Template",
+  header: "A special credit card made for Developers.",
+  text: "Millions of companies of all sizes use Feanpay online and in person to accept payments, send payouts, automate financial processes, and ultimately grow revenue.",
+  cta1: "Get Started",
   cta2: "Explore",
   heroImage: heroImage,
   heroBanner: [ 
@@ -205,7 +206,7 @@ const hero = {
 
 const footer = {
   logo: FooterLogo,
-  text: "Social media validation business model canvas graphical user interface launch party creative facebook iPad twitter.",
+  text: "Innovative financial connectivity, business model optimization, user-friendly interface, and a dynamic launch strategy define Feanpay's presence in the digital landscape.",
   caption: "All Rights Reserved.",
   data: [
     {
@@ -279,7 +280,7 @@ const navbar = {
     },
     {
       name: "Login",
-      url: "login",
+      url: "https://feanpay.netlify.app/",
     },
   ],
 };
